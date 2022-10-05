@@ -6,7 +6,7 @@
 FQDN=$(hostname)
 OSNAMEANDVERSION=$(hostnamectl | grep -h "Operating")
 IPADDRESS=$(hostname -i | awk '{print $1}')
-SpaceAvailableInRoot=$(df / -h | grep "/sda" | awk '{print $4}')  
+SpaceAvailableInRoot=$(df / -h | grep "/dev" | awk '{print $4}')  
 
 
 #print out the report using the gathered data
@@ -21,5 +21,5 @@ My linux IP Address : $IPADDRESS
 ----------
 My linux Root Filesystem Free Space : $SpaceAvailableInRoot
 ----------
---end--
+end
 EOF
