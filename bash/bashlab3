@@ -24,5 +24,9 @@ echo "----------"
 echo "Step2. Running lxbr0 in the vm"
 echo "----------"
 #running lxbr0 in the vm using lxd init --auto
-$(lxd init --auto)
-echo "Output = lxbr0 is created"
+ip a | grep -w "lxdbr0" > /dev/null
+
+if [ $? -ne 0 ]; then
+	lxd init --auto
+	echo "Output=lxdbr0 is created" 
+fi
