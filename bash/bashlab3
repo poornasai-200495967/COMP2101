@@ -2,6 +2,7 @@
 #My Bash lab 3
 
 #use the which command to see if we have lxd on the system already
+echo "Step1. Installing LXD in the vm"
 which lxd >/dev/null
 if [ $? -ne 0 ]; then
 	# need to install lxd
@@ -13,7 +14,6 @@ if [ $? -ne 0 ]; then
 		exit 1
 	fi
 else
-echo "Step1. Installing LXD in the vm"
 echo "---------"
 echo "Output = lxd is already installed in the vm"
 fi
