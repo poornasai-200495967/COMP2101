@@ -15,29 +15,29 @@
 # Usage:
 #   error-message ["some text to print to stderr"]
 function error-message {
-	echo "Error..." >&2
+	echo "Error-message" >&2
 }
 
 # This function will send a message to stderr and exit with a failure status
 # Usage:
 #   error-exit ["some text to print to stderr" [exit-status]]
 function error-exit {
-	echo "Error..."
+	echo "Error-exit"
 	exit
 }
 #This function displays help information if the user asks for it on the command line or gives us a bad command line
 function displayhelp {
 echo "Dsiplaying linux system information
 OPTIONS:
---cpu
---os
---disk
---host
---memory
---ipconfig
---domain
---printer
---help
+--cpu         : prints cpu information
+--os          : prints os information
+--disk	      : prints disk information
+--host	      : prints host information
+--memory      : prnts memory information
+--ipconfig    : prints ip information
+--domain      : prints domain information
+--printer     : prints printer information
+--help	       
 "
 }
 
