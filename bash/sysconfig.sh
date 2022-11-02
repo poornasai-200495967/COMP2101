@@ -44,7 +44,10 @@ OPTIONS:
 # This function will remove all the temp files created by the script
 function cleanup {
 # The temp files are all named similarly, "/tmp/somethinginfo.$$"
-rm /tmp/*.$$
+rm /tmp/sysinfo.$$
+rm /tmp/memoryinfo.$$
+rm /tmp/cpuinfo.$$
+echo "Deleted the temp files"
  exit
 }
 
