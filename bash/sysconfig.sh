@@ -63,7 +63,7 @@ trap cleanup SIGINT
 #This function produces the network configuration for our report
 function getipinfo {
   # reuse our netid.sh script from lab 4
-  bash netid.sh
+  netid.sh
 }
 
 # process command line options
