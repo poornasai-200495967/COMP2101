@@ -27,17 +27,17 @@ function error-exit {
 }
 #This function displays help information if the user asks for it on the command line or gives us a bad command line
 function displayhelp {
-echo "Dsiplaying linux system information
-OPTIONS:
---cpu         : prints cpu information
---os          : prints os information
---disk	      : prints disk information
---host	      : prints host information
---memory      : prnts memory information
---ipconfig    : prints ip information
---domain      : prints domain information
---printer     : prints printer information
---help	       
+echo "Dsiplaying my linux system data
+
+cpu         : prints Central Processing Unit data
+os          : prints Operating System data
+disk	    : prints disk data
+host	    : prints host data
+memory      : prnts memory data
+ipconfig    : prints Internet Protocol data
+domain      : prints domain data
+printer     : prints printer data
+help	       
 "
 }
 
